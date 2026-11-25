@@ -14,11 +14,23 @@ Built with React 19, TypeScript (strict mode), Vite, TanStack Query, Zustand, re
 
 You need **Node 22.12 or newer**. The mock server alone also works on Node 18.
 
+Install once:
+
 ```bash
 npm install
-npm run mock      # terminal 1: starts the mock server on http://localhost:4000
-npm run dev       # terminal 2: open the link that Vite prints
 ```
+
+Then use **two terminals**, both in the project folder, and keep both running while you use the app:
+
+```bash
+# Terminal 1: the mock server (http://localhost:4000)
+npm run mock
+
+# Terminal 2: the app
+npm run dev
+```
+
+Open the link that Vite prints in terminal 2 (usually http://localhost:5173). Start the mock first. To stop, press Ctrl+C in each terminal.
 
 Other commands:
 
@@ -199,4 +211,3 @@ I didn't change `mock-server.mjs`. I noticed these things while building against
 5. **Take over also works while the AI is handling the conversation,** not only when it asks for help.
 6. **The server doesn't check `clientMessageId` for repeats.** If a reply was saved but the answer got lost and the app retried, the reply would be saved twice.
 7. **Restarting the server starts the event numbers from 0 again.** The app notices this (an event number far below its cursor) and reloads its data.
-# hams-ai-supervisor
