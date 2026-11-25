@@ -1,0 +1,62 @@
+/* Design tokens from the "Design tokens & components" artboard. */
+@theme {
+  --font-sans: 'Inter', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+
+  --color-ink: #0f172a;
+  --color-text-2: #475467;
+  --color-muted: #5b6474;
+  --color-canvas: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-line: #e4e7ec;
+  --color-line-strong: #d0d5dd;
+
+  --color-accent: #4f46e5;
+  --color-accent-soft: #eef0ff;
+  --color-accent-line: #dce0ff;
+
+  --color-ai-bg: #eef2ff;
+  --color-ai-fg: #3730a3;
+  --color-ai-dot: #6366f1;
+
+  --color-needs-bg: #fff4e5;
+  --color-needs-fg: #9a3412;
+  --color-needs-dot: #f97316;
+  --color-needs-line: #fed7aa;
+
+  --color-human-bg: #e6f6f4;
+  --color-human-fg: #115e59;
+  --color-human-dot: #14b8a6;
+  --color-human-line: #bfe7e1;
+
+  --color-closed-bg: #f1f5f9;
+  --color-closed-fg: #475569;
+  --color-closed-dot: #94a3b8;
+
+  --color-online-bg: #ecfdf3;
+  --color-online-fg: #067647;
+  --color-online-dot: #17b26a;
+
+  --color-error: #b42318;
+  --color-error-bg: #fff5f5;
+  --color-error-line: #f4a3a3;
+
+  --animate-typing: typing 1.2s infinite;
+  --animate-caret: caret 1s steps(1) infinite;
+
+  @keyframes caret {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes typing {
+    0%,
+    80%,
+    100% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+}
